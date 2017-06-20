@@ -7,7 +7,7 @@ package com.ajl;
     String is used pretty often, it's a sequence of chars
     It's a class
 */
- */
+
 
 public class Main {
 
@@ -56,6 +56,16 @@ public class Main {
         char atSymbol = '\u00A9';
         System.out.println("Unicode character is: " + myChar + " " + atSymbol);
 
+        // small challenge
+        double somenum1 = 20;
+        double somenum2 = 80;
+        double result1 = (somenum1 + somenum2) * 25;
+        System.out.println("result is: " + result1);
+        double result2 = result1 % 40;
+
+        if (result2 <= 20){
+            System.out.println(result2 + " Total was over the limit");
+        }
 
         boolean myBoolean = false;
         boolean isMale = true;
@@ -63,5 +73,18 @@ public class Main {
         String mystring = "This is a string";
         System.out.println(mystring);
 
+        // format of a ternary operator: says if isMale is false then isfemale is true, if true, then isfemale is false
+        boolean isfemale = isMale ? false: true;
+        System.out.println("You said you were male earlier so are you still make? " + isfemale);
+
+        /*
+        This is the same as the above statement I assume.
+
+        if(isMale == false){
+            boolean isfemale = true;
+        }else{
+            isMale = true;
+        }
+        */
     }
 }
