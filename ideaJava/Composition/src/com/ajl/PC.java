@@ -17,15 +17,29 @@ public class PC {
         this.motherboard = motherboard;
     }
 
-    public Case getTheCase() {
-        return theCase;
+    public void powerUp(){
+//        getTheCase().pressPowerButton();
+        theCase.pressPowerButton();
+        drawLogo();
     }
 
-    public Monitor getMonitor() {
-        return monitor;
+    private void drawLogo(){
+        //fancy graphics
+//        getMonitor().drawPixelAt(1200, 40, "pink");
+        // can also do in this form
+        monitor.drawPixelAt(1200, 40, "pink");
     }
 
-    public Motherboard getMotherboard() {
-        return motherboard;
-    }
+//    // so now let's change all the public into private; now we don't need these
+//    private Case getTheCase() {
+//        return theCase;
+//    }
+//
+//    private Monitor getMonitor() {
+//        return monitor;
+//    }
+//
+//    private Motherboard getMotherboard() {
+//        return motherboard;
+//    }
 }
