@@ -45,5 +45,8 @@ public class Main {
         bedroom.getLamp().light();
         bedroom.getCloset().store(5);
         bedroom.prepareForSleep();
+
+        // how he did it was having 4 walls, a ceiling, a bed, and a lamp for bedroom.
+        // surprised quite similar to what I thought.
     }
 }
