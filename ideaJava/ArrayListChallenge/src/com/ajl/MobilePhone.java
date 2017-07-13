@@ -16,7 +16,7 @@ public class MobilePhone {
     }
 
     public void modifyContact (String current, String contact){
-        int pos = queryContact(contact);
+        int pos = queryContact(current);
         if(pos>=0){
             contacts.set(pos, contact);
         }
