@@ -6,6 +6,7 @@ import java.util.ArrayList;
  * Created by janly on 7/13/17.
  * this class holds an arraylist of contacts
  * has to be able to store, modify, remove and query contact names
+ * this is the original one I made using the previous lesson as an example
  */
 
 public class MobilePhone {
